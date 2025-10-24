@@ -7,6 +7,7 @@ This repository contains JavaScript scripts designed for Adobe Acrobat PDF forms
 ## Features
 
 - **Supports multiple time formats with regexes**: 8:30, 8.5, 1:45 PM, arrived at 7:15 a. m., etc.
+- **Supports overnight shifts**: 8 PM to 2 AM shifts will be properly displayed as 6 hours
 - **Quarter-hour rounding**: Automatically rounds total hours to the nearest 0.25.
 - **Validation**: Alerts users on invalid entries like '13 PM' or '8:75'.  
 - **Break handling**: Supports calculating breaks between shifts.  
