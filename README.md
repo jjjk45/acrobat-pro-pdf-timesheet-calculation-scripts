@@ -31,6 +31,10 @@ There is a timesheet with the scripts already applied in the sample timesheets f
 
 - Scripts are designed for **Adobe Acrobat Pro**, not just Acrobat Reader.  
 - Use plain text editors when copying scripts to avoid hidden characters that break Acrobat.
-- The Math.round implementation for quarter hours causes anything within 7 minutes of a quarter hour to be counted as one. For example, both 1:30 to 1:53 and 1:30 to 2:07 are counted as .5 hours total.  
+- The Math.round implementation for quarter hours causes anything within 7 minutes of a quarter hour to be counted as one. For example, both 1:30 to 1:53 and 1:30 to 2:07 are counted as .5 hours total.
+
+## To Do
+
+- At this time the script does not handle cases where users do not specify AM and PM in cases where time worked is in both. For example, a user puts 10 for IN and 1 for OUT, meaning 10 AM and 1 PM but failing to specify, the total time difference (1 - 10) would be negative and nothing would be displayed. I will update it soon so that, if the total between times is negative, the out time will automatically be +=12.
 
 ---
