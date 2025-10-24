@@ -35,6 +35,6 @@ There is a timesheet with the scripts already applied in the sample timesheets f
 
 ## To Do
 
-- At this time the script does not handle cases where users do not specify AM and PM in cases where time worked is in both. For example, a user puts 10 for IN and 1 for OUT, meaning 10 AM and 1 PM but failing to specify, the total time difference (1 - 10) would be negative and nothing would be displayed. I will update it soon so that, if the total between times is negative, the out time will automatically be +=12.
+- Update sample timesheet with fixed scripts
 
 ---
