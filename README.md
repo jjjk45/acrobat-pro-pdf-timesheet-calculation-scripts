@@ -1,12 +1,12 @@
 # Adobe Acrobat Pro PDF Timesheet Calculation Scripts
 
-This repository contains JavaScript scripts designed for Adobe Acrobat PDF forms to calculate total hours on employee timesheets automatically. When I needed them, I really wished they already existed so I'm sharing them.
+This repository contains JavaScript scripts designed for Adobe Acrobat PDF forms to calculate total hours on employee timesheets automatically. When I needed them, I really wished they already existed, so I'm sharing them.
 
 ---
 
 ## Features
 
-- **Supports multiple time formats with regexes**: 8:30, 8.5, 1:45 PM, arrived at 7:15 a.m., etc.
+- **Supports multiple time formats with regexes**: 8:30, 8.5, 1:45 PM, arrived at 7:15 a. m., etc.
 - **Quarter-hour rounding**: Automatically rounds total hours to the nearest 0.25.
 - **Validation**: Alerts users on invalid entries like '13 PM' or '8:75'.  
 - **Break handling**: Supports calculating breaks between shifts.  
@@ -22,6 +22,8 @@ This repository contains JavaScript scripts designed for Adobe Acrobat PDF forms
 5. Right-click → Properties → Calculate → Custom Calculation Script → Edit.  
 6. Paste the desired script from this repository.  
 7. Press OK and test by entering IN/OUT times.
+
+There is a timesheet with the scripts already applied in the sample timesheets folder :)
 
 ---
 
