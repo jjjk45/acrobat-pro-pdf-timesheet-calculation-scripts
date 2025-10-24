@@ -1,7 +1,7 @@
 //hardcoded, searching through all fields would slow down the script unnecessarily
 var pair = ["OUTSunday", "INSunday_2"];
 
-invalidFlag = false; 
+var invalidFlag = false; 
 
 //IMPLEMENTATION CAUSES ANYTHING WITHIN 7 MINUTES TO BE COUNTED AS A QUARTER HOUR E.G. BOTH 1:30 TO 1:53 AND 1:30 TO 2:07 EQUAL .5 HOURS WORKED
 function toQuarterHour(num) {
@@ -22,8 +22,8 @@ function extractHourDecimal(str) {
         invalidFlag = true;
         return 0;
     }
-    if (ampm === "PM" && hour < 12) hour += 12;
-    if (ampm === "AM" && hour === 12) hour = 0;
+    if (ampm === "PM" && hour < 12) { hour += 12; }
+    if (ampm === "AM" && hour === 12) { hour = 0; }
     return hour + minute/60;
 }
 
@@ -35,6 +35,9 @@ var total = 0;
 if(inBreakVal && outBreakVal) {
     var inBreakTime = extractHourDecimal(inBreakVal);
     var outBreakTime = extractHourDecimal(outBreakVal);
+    if(inBreakTime < outBreakTime) {
+        inBreakTime += (inBreakTime <= 12 && outBreakTime <= 12) ? 12 : 24;
+    }
     total += toQuarterHour(inBreakTime - outBreakTime);
 }
 
