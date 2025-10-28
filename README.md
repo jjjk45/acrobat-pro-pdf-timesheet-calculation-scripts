@@ -8,9 +8,9 @@ This repository contains JavaScript scripts designed for Adobe Acrobat PDF forms
 
 - **Supports multiple time formats with regexes**: 8:30, 8.5, 1:45 PM, arrived at 7:15 a. m., etc.
 - **Supports overnight shifts**: 8 PM to 2 AM shifts will be properly displayed as 6 hours
-- **Quarter-hour rounding**: Automatically rounds total hours to the nearest 0.25.
-- **Validation**: Alerts users on invalid entries like '13 PM' or '8:75'.  
-- **Break handling**: Supports calculating breaks between shifts.  
+- **Quarter-hour rounding**: Automatically rounds total hours to the nearest 0.25
+- **Validation**: Alerts users on invalid entries like '13 PM' or '8:75'
+- **Break handling**: Supports calculating breaks between shifts
 
 ---
 
@@ -32,10 +32,5 @@ There is a timesheet with the scripts already applied in the sample timesheets f
 
 - Scripts are designed for **Adobe Acrobat Pro**, not just Acrobat Reader.  
 - Use plain text editors when copying scripts to avoid hidden characters that break Acrobat.
-- The Math.round implementation for quarter hours causes anything within 7 minutes of a quarter hour to be counted as one. For example, both 1:30 to 1:53 and 1:30 to 2:07 are counted as .5 hours total.
+- The Math.round() implementation for quarter hours causes anything within 7.5 minutes of a quarter hour to be counted as one. For example, both 1:30 to 1:53 and 1:30 to 2:07 are counted as .5 hours total.
 
-## To Do
-
-- Update sample timesheet with fixed scripts
-
----
