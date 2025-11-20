@@ -1,4 +1,4 @@
-# Adobe Acrobat Pro PDF Timesheet Calculation Scripts
+# Timesheet PDFs with Time Calculation Scripts
 
 This repository contains JavaScript scripts designed for Adobe Acrobat PDF forms to calculate total hours on employee timesheets automatically. When I needed them, I really wished they already existed, so I'm sharing them.
 
